@@ -1,0 +1,118 @@
+@font-face {
+    font-family: pixels-16;
+    src: url(/static/font/KarmaticArcade.ttf);
+}
+
+@font-face {
+    font-family: pixels-8;
+    src: url(/static/font/PSLCDMatrixII.ttf);
+}
+
+@keyframes color {
+    0% {
+        background-color: #fffcf2;
+        position: relative;
+
+    }
+
+    50% {
+        background-color: #eb5e28;
+        position: relative;
+
+    }
+
+    100% {
+        background-color: #fffcf2;
+        position: relative;
+    }
+}
+
+body {
+    background-color: #fffcf2;
+}
+
+
+nav {
+    background-color: #403d39;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pixel-16 {
+    font-family: pixels-16;
+}
+
+.pixel-8 {
+    font-family: pixels-8;
+}
+
+.frame-radius {
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #fffcf2;
+}
+
+.frame-radius:hover {
+    border-style: solid;
+    border-radius: 50px;
+    border-color: #eb5e28;
+    background: #fffcf2;
+    animation: color 1s;
+
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #fffcf2;
+    margin: 10px;
+}
+
+.logo:hover {
+    color: #eb5e28;
+
+}
+
+.pxitm {
+    color: #fffcf2;
+    font-size: 20px;
+    text-decoration: dotted;
+    position: relative;
+
+}
+
+.pxitm:hover {
+    color: #eb5e28;
+    position: relative;
+    bottom: 3px;
+
+
+}
+
+.act-item {
+    position: relative;
+    color: #eb5e28;
+    text-decoration: dotted;
+}
+
+.act-item:hover {
+    color: #fffcf2;
+}
+
+hr {
+    color: #fffcf2;
+    background-color: #fffcf2;
+    height: 3px;
+}
+
+.img-carousel {
+    height: 300px;
+    width: 500px;
+}
+
+.content {
+    margin-top: 1px;
+}
