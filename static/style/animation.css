@@ -42,8 +42,8 @@
 }
 
 @keyframes bg-fg {
-    0% {
-        color: #eb5e28;
+    frame1 {
+        color: #ff0000;
     }
 
     50% {
@@ -54,6 +54,46 @@
         color: aqua;
     }
 
+}
+
+@keyframes rainbow {
+    0% {
+        color: #ff0000;
+    }
+    8% {
+        color: #ff8000;
+    }
+    16% {
+        color: #ffff00;
+    }
+    24% {
+        color: #80ff00;
+    }
+    32% {
+        color: #00ff00;
+    }
+    40% {
+        color: #00ff80;
+    }
+    48% {
+        color: #00ffff;
+    }
+    56% {
+        color: #0080ff;
+    }
+    64% {
+        color: #0000ff;
+    }
+    72%{
+        color: #8000ff;
+    }
+    80% {
+        color: #ff00ff;
+    }
+    100% {
+        color: #ff0080;
+    }
+    
 }
 
 
@@ -117,4 +157,18 @@
 
 .cb {
     margin: 20px;
+}
+
+.regis-h {
+    animation: rainbow 5s infinite;
+}
+
+.hr-head {
+    position: relative;
+    margin-left:10px;
+    margin-right: 10px;
+    width: 60%;
+    top: 7px;
+    color: black;
+
 }

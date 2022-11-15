@@ -24,12 +24,15 @@ a {
     color: #fffcf2;
 }
 
-hr {
-    color: #fffcf2;
-    background-color: #fffcf2;
-    height: 3px;
-}
+
 
 .content-blocks {
     background-color: #403d39;
+}
+
+
+
+.regis {
+    align-items: center;
+    border-radius: 20px;
 }

@@ -19,7 +19,13 @@ function calculate(x, y, z) {
 
 function multiply(x){
     for (i = 1; i<= 12; i++){
-        document.write(`<h5 align="center" class="pixel-8">${x} x ${i} = ${x*i}</h5>`)
+        document.write(`<h1 align="center" class="digital text-danger">${x} x ${i} = ${x*i}</h1>`)
     }
 }
+
+$(function() {
+    $('#menu-title a').click(function(){
+        $('#btn-title').text($(this).text());
+    });
+});
 

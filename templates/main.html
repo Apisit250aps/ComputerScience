@@ -27,6 +27,13 @@
     <link rel="stylesheet" href="{% static 'style/fonts.css' %}">
     <link rel="stylesheet" href="{% static 'style/animation.css' %}">
     <script src="{% static 'script/script.js' %}"></script>
+    <script>
+        $(function() {
+            $('#menu-title a').click(function(){
+                $('#btn-title').text($(this).text());
+            });
+        });
+    </script>
 
 
 

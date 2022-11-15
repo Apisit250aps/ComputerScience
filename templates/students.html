@@ -2,99 +2,81 @@
 {% load static %}
 {% block title %}Students{% endblock title %}
 
+
+
 {% block contents %}
 <h1 align="center" class="pixel-16 scpt" style="margin-top: 10px;">
     <script>
-        print("Apisit Saithong");
+        print("User");
     </script>
 </h1>
+
 <div align="center" class="mb-5">
-    <form action="">
-        User Registration
-        <hr>
-        <table width="50%" align="center">
-            <tr>
-                <td>
-                    <b>name</b>
-                </td>
-                <td><input type="text" name="fname" id=""></td>
-            </tr>
-            <tr>
-                <td>
-                    <b>Gender</b>
-                </td>
-                <td>
-                    <div class="d-flex">
-                        <div class="d-flex cb">
-                            <input type="radio" name="female">
-                            <p>female</p>
-                        </div>
-                        <div class="d-flex cb">
-                            <input type="radio" name="male">
-                            <p>male</p>
-                        </div>
+    <form action="" align="center" class="d-flex flex-column align-items-center">
+        <div class="d-flex  regis-h" align="center">
+            <hr class="hr-head">
+            <h2>
+                <b class="pixel-8">Registration</b>
+            </h2>
+            <hr class="hr-head">
+        </div>
+        <div class="regis w-50 bg-dark m-4 p-4" align="center">
+            <div class="form-group">
+                <label for="name" class="text-light mb-2">Name-Surname</label>
+                <div class="input-group">
+                    
+                    <button id="btn-title" class="btn btn-success dropdown-toggle" type="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Prefix</button>
+                    <div id="menu-title" class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Mr.</a>
+                        <a class="dropdown-item" href="#">Mrs.</a>
+                        <a class="dropdown-item" href="#">M.</a>
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b>Email</b>
-                </td>
-                <td>
-                    <input type="email" name="" id="">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b>Favorite Programming</b>
-                </td>
-                <td class="d-flex">
-                    <div class="d-flex cb">
-                        <input type="checkbox" name="html" id="">
-                        <p>HTML</p>
-                        <select name="" id="">
-                            <option value="one">น้อย</option>
-                            <option value="two">ปานกลาง</option>
-                            <option value="tree">มาก</option>
-                        </select>
+                    <script>
+                        $(function() {
+                            $('#menu-title a').click(function(){
+                                $('#btn-title').text($(this).text());
+                            });
+                        });
+                    </script>
+                    <input type="text" class="form-control" id="name">
+                </div>
+
+            </div>
+            <hr class="text-light">
+            <div class="form-group ">
+                <label for="name" class="text-light mb-2">Gender</label>
+                <div class="d-flex flex-md-row justify-content-center">
+                    <div class="form-check form-check-inline d-flex">
+                        <input type="checkbox" class="form-check" id="radio1" value="option1">
+                        <label for="radio1" class="form-check-label text-light m-2">Female</label>
                     </div>
-                </td>
-                <td>
-                    <div class="d-flex cb">
-                        <input type="checkbox" name="html" id="">
-                        <p>CSS</p>
-                        <select name="" id="">
-                            <option value="one">น้อย</option>
-                            <option value="two">ปานกลาง</option>
-                            <option value="tree">มาก</option>
-                        </select>
+                    <div class="form-check form-check-inline d-flex">
+                        <input type="checkbox" class="form-check" id="radio2" value="option2">
+                        <label for="radio2" class="form-check-label text-light m-2">Male</label>
                     </div>
-                </td>
-                <td>
-                    <div class="d-flex cb">
-                        <input type="checkbox" name="html" id="">
-                        <p>JavaScript</p>
-                        <select name="" id="">
-                            <option value="one">น้อย</option>
-                            <option value="two">ปานกลาง</option>
-                            <option value="tree">มาก</option>
-                        </select>
+                    <div class="form-check form-check-inline d-flex">
+                        <input type="checkbox" class="form-check" id="radio3" value="option3">
+                        <label for="radio3" class="form-check-label text-light m-2">LGBTQIA+</label>
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <button id="reset">reset</button>
-                </td>
-                <td>
-                    <button id="submit">submit</button>
-                </td>
-            </tr>
-        </table>
+                </div>
+                <hr class="text-light">
+                <div class="form-group">
+                    <label for="email" class="text-light mb-2">E-mail</label>
+                    <input type="email" class="form-control" id="email">
+                    <hr class="text-light">
+                </div>
+                <div class="form-group">
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </div>
+
+            </div>
+        </div>
+
     </form>
 </div>
-<hr>
+
 <h1 align="center" class="pixel-8">
     <script>
         calculate(100, 'x', 5000000)
@@ -108,4 +90,3 @@
 <hr>
 
 {% endblock contents %}
-
