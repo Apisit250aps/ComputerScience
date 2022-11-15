@@ -8,23 +8,70 @@
     src: url(/static/font/PSLCDMatrixII.ttf);
 }
 
-@keyframes color {
+@font-face {
+    font-family: cubic-6;
+    src: url(/static/font/cubic.ttf);
+}
+
+@font-face {
+    font-family: hand-eng;
+    src: url(/static/font/KarmaticArcade.ttf);
+}
+
+@keyframes frame-bg {
     0% {
         background-color: #fffcf2;
         position: relative;
+        bottom: 0px;
 
     }
 
     50% {
         background-color: #eb5e28;
         position: relative;
+        bottom: 3px;
 
     }
 
     100% {
         background-color: #fffcf2;
         position: relative;
+        bottom: 0px;
     }
+}
+
+@keyframes frame-fg {
+    0% {
+        color: #fffcf2;
+        position: relative;
+        bottom: 0px;
+
+    }
+
+    50% {
+        color: #eb5e28;
+        position: relative;
+        bottom: 3px;
+    }
+
+    100% {
+        color: #fffcf2;
+        position: relative;
+        bottom: 0px;
+    }
+}
+
+@keyframes bg-fg {
+    0% {
+        color: #eb5e28;
+    }
+    50% {
+        color: lawngreen;
+    }
+    100% {
+        color: aqua;
+    }
+    
 }
 
 body {
@@ -48,10 +95,19 @@ a {
     font-family: pixels-8;
 }
 
+.cubics {
+    font-family: cubic-6;
+}
+
+.hand-eng {
+    font-family: hand-eng;
+}
+
 .frame-radius {
     border-style: solid;
     border-radius: 50px;
     border-color: #fffcf2;
+    
 }
 
 .frame-radius:hover {
@@ -59,7 +115,7 @@ a {
     border-radius: 50px;
     border-color: #eb5e28;
     background: #fffcf2;
-    animation: color 1s;
+    animation: frame-bg 1s;
 
 }
 
@@ -85,9 +141,7 @@ a {
 }
 
 .pxitm:hover {
-    color: #eb5e28;
-    position: relative;
-    bottom: 3px;
+    animation: frame-fg 1s;
 
 
 }
@@ -108,11 +162,21 @@ hr {
     height: 3px;
 }
 
-.img-carousel {
-    height: 300px;
-    width: 500px;
+.scpt {
+    color: pink;
+    background: black;
+    animation: bg-fg 1s infinite;
+    padding: 20px;
+    
 }
 
-.content {
-    margin-top: 1px;
+.scpt:hover {
+    color: #eb5e28;
+    background: black;
 }
+
+.cb {
+    margin: 20px;
+}
+
+

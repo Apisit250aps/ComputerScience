@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" type="image/x-icon">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <script src="{% static 'script.js' %}"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .carousel-item>img {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+
+
+</head>
+
+<body class="md-4">
+    <div class="header" style="z-index: -5;">
+        <nav class="navbar navbar-expand-sm">
+            <div class="container">
+                <div class="frame-radius">
+                    <a href="" class="nav-link">
+                        <p class="pixel-16 logo" alt="SSKRU">Computer Science</p>
+                    </a>
+                </div>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar1">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navbar1" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link">
+                                <div class="pxitm">
+                                    <p class="pixel-8">Home</p>
+                                </div>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a href="students" class="nav-link">
+                                <div class="pxitm">
+                                    <p class="pixel-8 act-item">Student</p>
+                                </div>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link">
+                                <div class="pxitm">
+                                    <p class="pixel-8">Activity</p>
+                                </div>
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a href="home.html" class="nav-link">
+                                <div class="pxitm">
+                                    <p class="pixel-8">Contact</p>
+                                </div>
+                            </a>
+                        </li>
+                        <hr>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section id="slider">
+        <div class="carousel slide" data-bs-ride="carousel" id="Myslider">
+            <ol class="carousel-indicators">
+                <button data-bs-target="#Myslider" data-bs-slide-to="0" class="active"></button>
+                <button data-bs-target="#Myslider" data-bs-slide-to="1"></button>
+                <button data-bs-target="#Myslider" data-bs-slide-to="2"></button>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item img-fluid active">
+                    <img src={% static 'pictures/Untitled-1.png' %}>
+                </div>
+                <div class="carousel-item img-fluid">
+                    <img src={% static 'pictures/Untitled-2.png' %}>
+                </div>
+                <div class="carousel-item img-fluid">
+                    <img src={% static 'pictures/Untitled-3.png' %}>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <table align="center" style="margin-top: 10px;" width="100%">
+        <tr>
+            <py>
+                for i in range(10):
+                    print(i)
+            </py>
+        </tr>
+       
+        
+    </table> -->
+    <h1 align="center" class="pixel-16 scpt" style="margin-top: 10px;">
+        <script>
+           
+            print("Apisit Saithong");
+        </script>
+    </h1>
+    <div align="center" class="mb-5">
+        <form action="">
+            User Registration
+            <hr>
+            <table width="50%" align="center">
+                <tr>
+                    <td>
+                        <b>name</b>
+                    </td>
+                    <td><input type="text" name="fname" id=""></td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Gender</b>
+                    </td>
+                    <td>
+                        <div class="d-flex">
+                            <div class="d-flex cb">
+                                <input type="radio" name="female">
+                                <p>female</p>
+                            </div>
+                            <div class="d-flex cb">
+                                <input type="radio" name="male">
+                                <p>male</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Email</b>
+                    </td>
+                    <td>
+                        <input type="email" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <b>Favorite Programming</b>
+                    </td>
+                    <td class="d-flex">
+                        <div class="d-flex cb">
+                            <input type="checkbox" name="html" id="">
+                            <p>HTML</p>
+                            <select name="" id="">
+                                <option value="one">น้อย</option>
+                                <option value="two">ปานกลาง</option>
+                                <option value="tree">มาก</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex cb">
+                            <input type="checkbox" name="html" id="">
+                            <p>CSS</p>
+                            <select name="" id="">
+                                <option value="one">น้อย</option>
+                                <option value="two">ปานกลาง</option>
+                                <option value="tree">มาก</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="d-flex cb">
+                            <input type="checkbox" name="html" id="">
+                            <p>JavaScript</p>
+                            <select name="" id="">
+                                <option value="one">น้อย</option>
+                                <option value="two">ปานกลาง</option>
+                                <option value="tree">มาก</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button id="reset">reset</button>
+                    </td>
+                    <td>
+                        <button id="submit">submit</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <hr>
+    <h1 align="center" class="pixel-8">
+        <script>
+            calculate(100, 'x', 5000000)
+        </script>
+    </h1>
+    <p align="center">
+        <script>
+            multiply(12)
+        </script>
+    </p>
+    <hr>
+    
+</body>
+
+</html>
