@@ -1,7 +1,1 @@
-"# ComputerScience"
-
-
-Website for Computer Science SSKRU
-"# ComputerScience" 
-"# ComputerScienceWebsite" 
 "# ComputerScienceWebsite" 
