@@ -1,0 +1,35 @@
+
+body {
+    background-color: #fffcf2;
+}
+
+
+nav {
+    background-color: #403d39;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.act-item {
+    position: relative;
+    color: #eb5e28;
+    text-decoration: dotted;
+}
+
+.act-item:hover {
+    color: #fffcf2;
+}
+
+hr {
+    color: #fffcf2;
+    background-color: #fffcf2;
+    height: 3px;
+}
+
+.content-blocks {
+    background-color: #403d39;
+}

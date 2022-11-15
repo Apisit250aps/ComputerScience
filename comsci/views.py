@@ -15,7 +15,7 @@ def homepage(request):
     # fb = data['Facebook']
     try :
     
-        information = pd.read_excel('data.xlsx')
+        information = pd.read_excel('database/excel/data.xlsx')
         data = pd.DataFrame(information).set_index('ที่')
         pic = {
         'datas': data,

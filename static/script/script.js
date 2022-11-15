@@ -19,6 +19,7 @@ function calculate(x, y, z) {
 
 function multiply(x){
     for (i = 1; i<= 12; i++){
-        document.write(`<h4 align="center" class="pixel-8">${x} x ${i} = ${x*i}</h4>`)
+        document.write(`<h5 align="center" class="pixel-8">${x} x ${i} = ${x*i}</h5>`)
     }
 }
+

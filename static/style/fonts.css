@@ -1,0 +1,36 @@
+@font-face {
+    font-family: pixels-16;
+    src: url(/static/font/KarmaticArcade.ttf);
+}
+
+@font-face {
+    font-family: pixels-8;
+    src: url(/static/font/PSLCDMatrixII.ttf);
+}
+
+@font-face {
+    font-family: cubic-6;
+    src: url(/static/font/cubic.ttf);
+}
+
+@font-face {
+    font-family: hand-eng;
+    src: url(/static/font/KarmaticArcade.ttf);
+}
+
+
+.pixel-16 {
+    font-family: pixels-16;
+}
+
+.pixel-8 {
+    font-family: pixels-8;
+}
+
+.cubics {
+    font-family: cubic-6;
+}
+
+.hand-eng {
+    font-family: hand-eng;
+}
