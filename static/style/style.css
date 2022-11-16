@@ -30,9 +30,13 @@ a {
     background-color: #403d39;
 }
 
-
-
 .regis {
     align-items: center;
     border-radius: 20px;
+}
+
+.frame-items {
+    border-radius: 20px;
+    height: fit-content;
+    background-color: #eb5e28;
 }
