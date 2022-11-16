@@ -39,5 +39,11 @@ def homepage(request):
    
     return render(request, 'home.html', pic)
 
+
+def form_page(request):
+    return render(request, 'work_pages/form.html')
+
+
 def students(request):
     return render(request, 'students.html')
+

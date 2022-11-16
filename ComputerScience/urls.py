@@ -25,6 +25,7 @@ urlpatterns = [
     # Uncomment the next line to enable the admin:
     
     path('', cs.homepage, name='homepage'),
-    path('students', cs.students, name='students')
+    path('students', cs.students, name='students'),
+    path('form', cs.form_page, name='work_pages')
 
 ]

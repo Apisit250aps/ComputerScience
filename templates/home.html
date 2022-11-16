@@ -2,42 +2,93 @@
 {% load static %}
 {% block title %}Home{% endblock title %}
 
-{% block contents %}
-
-<div class="contents">
-    <section id="slider">
-        <div class="carousel slide" data-bs-ride="carousel" id="Myslider">
-            <ol class="carousel-indicators">
-                <button data-bs-target="#Myslider" data-bs-slide-to="0" class="active"></button>
-                <button data-bs-target="#Myslider" data-bs-slide-to="1"></button>
-                <button data-bs-target="#Myslider" data-bs-slide-to="2"></button>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item img-fluid active">
-                    <img src={% static 'pictures/Untitled-1.png' %}>
+<body>
+    {% block contents %}
+    <div class="contents">
+        <section id="slider">
+            <div class="carousel slide" data-bs-ride="carousel" id="Myslider">
+                <ol class="carousel-indicators">
+                    <button data-bs-target="#Myslider" data-bs-slide-to="0" class="active"></button>
+                    <button data-bs-target="#Myslider" data-bs-slide-to="1"></button>
+                    <button data-bs-target="#Myslider" data-bs-slide-to="2"></button>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item img-fluid active">
+                        <img src={% static 'pictures/Untitled-1.png' %}>
+                    </div>
+                    <div class="carousel-item img-fluid">
+                        <img src={% static 'pictures/Untitled-2.png' %}>
+                    </div>
+                    <div class="carousel-item img-fluid">
+                        <img src={% static 'pictures/Untitled-3.png' %}>
+                    </div>
                 </div>
-                <div class="carousel-item img-fluid">
-                    <img src={% static 'pictures/Untitled-2.png' %}>
+            </div>
+        </section>
+      
+        <div class="worklist mt-1">
+            <div class="d-flex flex-row align-content-stretch justify-content-center flex-wrap content-blocks">
+                <div class="frame-items">
+                    <div class="my-works">
+                        <div class="card mb-3 align-items-center" style="width: 15rem;">
+                            <img class="card-img-top img-items" src="{% static 'pictures/form-icon.png'%}" alt="">
+                            <div class="card-body align-items-center">
+                                <a class="card-title nav-link" href="form">
+                                    <h4>Form</h4>
+                                </a>
+                                <p class="card-text">
+                                    งานในคลาส อ.อุรารัตน์
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item img-fluid">
-                    <img src={% static 'pictures/Untitled-3.png' %}>
+                <div class="frame-items">
+                    <div class="my-works">
+                        <div class="card mb-3 align-items-center" style="width: 15rem;">
+                            <img class="card-img-top img-items" src="{% static 'pictures/blank.png'%}" alt="">
+                            <div class="card-body align-items-center">
+                                <a class="card-title nav-link" href="#">
+                                    <h4>Blank</h4>
+                                </a>
+                                <p class="card-text">
+                                    - text -
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-items">
+                    <div class="my-works">
+                        <div class="card mb-3 align-items-center" style="width: 15rem;">
+                            <img class="card-img-top img-items" src="{% static 'pictures/blank.png'%}" alt="">
+                            <div class="card-body align-items-center">
+                                <a class="card-title nav-link" href="#">
+                                    <h4>Blank</h4>
+                                </a>
+                                <p class="card-text">
+                                    - text -
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-items">
+                    <div class="my-works">
+                        <div class="card mb-3 align-items-center" style="width: 15rem;">
+                            <img class="card-img-top img-items" src="{% static 'pictures/blank.png'%}" alt="">
+                            <div class="card-body align-items-center">
+                                <a class="card-title nav-link" href="#">
+                                    <h4>Blank</h4>
+                                </a>
+                                <p class="card-text">
+                                    - text -
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <hr>
-    <div class="worklist">
-        <div class="d-flex flex-row align-content-stretch flex-wrap content-blocks" style="height: 200px;">
-            <div class="frame-items">
-                <h1>
-                    <script>
-                        print("Apisit")
-                    </script>
-                </h1>
-            </div>
-            <div class="frame-items">WORK-1</div>
-            <div class="frame-items">WORK-1</div>
-        </div>
-    </div>
-
-    {% endblock contents %}
+        {% endblock contents %}
+</body>

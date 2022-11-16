@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work_Page</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" type="image/x-icon">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{% static 'style/style.css' %}">
+    <link rel="stylesheet" href="{% static 'style/fonts.css' %}">
+    <link rel="stylesheet" href="{% static 'style/animation.css' %}">
+    <script src="{% static 'script/script.js' %}"></script>
+
+    <style>
+        .carousel-item>img {
+            width: 100%;
+            height: 400px;
+        }
+
+        body {
+            background-color: #ccc5b9;
+        }
+
+        .frame-items {
+            border-radius: 20px;
+            height: fit-content;
+            background-color: #ccc5b9;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .my-works {
+            border-radius: 20px;
+        }
+
+        .img-items {
+            margin: 10px;
+        }
+
+        .bubble-head {
+            z-index: 0;
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            border-style: solid;
+            border-color: black;
+            background-color: #fffcf2;
+        }
+
+        .bubble-head:hover {
+            border-color: #eb5e28;
+            background-color: #ccc5b9;
+            border-color: white;
+
+        }
+
+        .bubble-img {
+            margin: 5px;
+            color: white;
+        }
+
+        .my-form {
+            background-color: #403d39;
+
+        }
+    </style>
+
+    <script>
+        $(function () {
+            $('#menu-title a').click(function () {
+                $('#btn-title').text($(this).text());
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+    {% block body %}
+
+    {% endblock body %}
+</body>
+
+</html>
