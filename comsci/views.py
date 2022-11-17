@@ -47,3 +47,6 @@ def form_page(request):
 def students(request):
     return render(request, 'students.html')
 
+def homepage_lib(request):
+    return render(request, 'work_pages/lib.html')
+

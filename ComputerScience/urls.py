@@ -26,6 +26,7 @@ urlpatterns = [
     
     path('', cs.homepage, name='homepage'),
     path('students', cs.students, name='students'),
-    path('form', cs.form_page, name='work_pages')
+    path('form', cs.form_page, name='work_pages'),
+    path('lib', cs.homepage_lib, name='library')
 
 ]

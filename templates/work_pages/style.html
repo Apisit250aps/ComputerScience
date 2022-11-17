@@ -29,13 +29,27 @@
     <script src="{% static 'script/script.js' %}"></script>
 
     <style>
+       
         .carousel-item>img {
             width: 100%;
             height: 400px;
         }
 
-        body {
-            background-color: #ccc5b9;
+        .opec {
+            z-index: 10;
+            position: absolute;
+            top: 2%;
+            left: 1%;
+        }
+
+        .search-bar {
+            width: 50px;
+        }
+
+      
+
+        a {
+            text-decoration: none;
         }
 
         .frame-items {
@@ -62,28 +76,95 @@
             position: fixed;
             top: 10px;
             left: 10px;
-            border-style: solid;
-            border-color: black;
-            background-color: #fffcf2;
         }
 
-        .bubble-head:hover {
-            border-color: #eb5e28;
-            background-color: #ccc5b9;
-            border-color: white;
 
+        .bubble-btn {
+            font-size: 75px;
+            color: black;
         }
 
-        .bubble-img {
-            margin: 5px;
+        .bubble-btn:hover {
+            font-size: 80px;
             color: white;
         }
+
+        .img-logo-lib {
+            padding: 3px;
+            background-color: lightgray;
+            width: 150px;
+            height: 75px;
+            border-radius: 15px;
+        }
+
+        .frame-logo-lib {
+            background-color: white;
+            border-radius: 50px;
+        }
+
 
         .my-form {
             background-color: #403d39;
 
         }
+
+        @font-face {
+            font-family: keyboard-caps;
+            src: url("{% static 'font/BETSY2.ttf' %}");
+        }
+
+        @font-face {
+            font-family: th-txt;
+            src: url("{% static 'font/DSNPC___.TTF' %}");
+        }
+
+        .keycaps {
+            font-family: keyboard-caps;
+        }
+
+        .th-txt {
+            font-family: th-txt;
+        }
+
+      
     </style>
+    <style>
+        .dropbtn {      
+          border: none;
+          cursor: pointer;
+        }
+        
+        .dropdown {
+          position: relative;
+          display: inline-block;
+        }
+        
+        .dropdown-content {
+          display: none;
+          position: absolute;
+
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+        }
+        
+        .dropdown-content a {
+         
+          
+          text-decoration: none;
+          display: block;
+        }
+        
+        .dropdown-content a:hover {background-color: #f1f1f1}
+        
+        .dropdown:hover .dropdown-content {
+          display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: #ccc5b9;
+        }
+        </style>
 
     <script>
         $(function () {
@@ -96,7 +177,7 @@
 
 </head>
 
-<body>
+<body class="bg-light">
     {% block body %}
 
     {% endblock body %}
