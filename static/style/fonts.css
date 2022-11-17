@@ -28,6 +28,13 @@
     src: url(/static/font/Digital.ttf);
 }
 
+@font-face {
+    font-family: keyboard-caps;
+    src: url(/static/font/BETSY2.ttf);
+}
+
+
+
 
 .pixel-16 {
     font-family: pixels-16;
@@ -51,4 +58,8 @@
 
 .digital {
     font-family: digital;
+}
+
+.key-caps {
+    font-family: keyboard-caps;
 }
