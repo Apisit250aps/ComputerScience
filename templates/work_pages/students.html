@@ -4,13 +4,16 @@
 {% block body %}
 
 
-    {% for i in students.values %}
-        <script>
-            var color = [['6512732101', '6512732102', '6512732103'], ['mr', 'mr', 'mr'], ['python', 'JavaScript', 'JAVA']]
-            var data = 
-            data_set(color)
-        </script>
-    {% endfor %}
+{% for i in students.values %}
+<p>
+    <script>
+        var color = [['6512732101', '6512732102', '6512732103'], ['mr', 'mr', 'mr'], ['python', 'JavaScript', 'JAVA']]
+
+        print(color)
+    </script>
+</p>
+
+{% endfor %}
 
 
 

@@ -1,0 +1,23 @@
+{
+  "name": "computerscience",
+  "version": "1.0.0",
+  "description": "\"# ComputerScienceW\" \r \"# ComputerScience\" \r \"# ComputerScience\" \r \"# ComputerScience\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apisit250aps/ComputerScience.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Apisit250aps/ComputerScience/issues"
+  },
+  "homepage": "https://github.com/Apisit250aps/ComputerScience#readme",
+  "dependencies": {
+    "read-excel-file": "^5.5.3",
+    "tedious": "^15.1.2"
+  }
+}
