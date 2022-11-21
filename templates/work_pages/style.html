@@ -6,7 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Work_Page</title>
+    <title>
+        {{title}}
+    </title>
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" type="image/x-icon">
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1946/1946488.png" type="image/x-icon">
 
@@ -29,16 +31,24 @@
     <script src="{% static 'script/script.js' %}"></script>
 
     <style>
-       
         .carousel-item>img {
             width: 100%;
-            height: 400px;
+            height: 75%;
+        }
+
+        .bg-caption {
+
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 30px;
+            padding: 10px;
+            bottom: 10%;
+
         }
 
         .opec {
-            z-index: 10;
-            position: absolute;
-            top: 2%;
+            z-index: 1;
+            position: fixed;
+            top: 12%;
             left: 1%;
         }
 
@@ -46,10 +56,20 @@
             width: 50px;
         }
 
-      
+
 
         a {
             text-decoration: none;
+        }
+
+        .header {
+            position: fixed;
+            z-index: 10;
+            top: 0px;
+        }
+
+        .carousel-path {
+            margin-top: 90px;
         }
 
         .frame-items {
@@ -125,46 +145,46 @@
         .th-txt {
             font-family: th-txt;
         }
-
-      
     </style>
     <style>
-        .dropbtn {      
-          border: none;
-          cursor: pointer;
+        .dropbtn {
+            border: none;
+            cursor: pointer;
         }
-        
-        .dropdown {
-          position: relative;
-          display: inline-block;
-        }
-        
-        .dropdown-content {
-          display: none;
-          position: absolute;
 
-          min-width: 160px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
+        .dropdown {
+            position: relative;
+            display: inline-block;
         }
-        
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
         .dropdown-content a {
-         
-          
-          text-decoration: none;
-          display: block;
+
+
+            text-decoration: none;
+            display: block;
         }
-        
-        .dropdown-content a:hover {background-color: #f1f1f1}
-        
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+        }
+
         .dropdown:hover .dropdown-content {
-          display: block;
+            display: block;
         }
-        
+
         .dropdown:hover .dropbtn {
             background-color: #ccc5b9;
         }
-        </style>
+    </style>
 
     <script>
         $(function () {
@@ -172,7 +192,10 @@
                 $('#btn-title').text($(this).text());
             });
         });
+
+       
     </script>
+    
 
 
 </head>
